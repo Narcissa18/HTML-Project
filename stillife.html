@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Still life Art</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script language="JavaScript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <style>
+       {
+ box-sizing: border-box;
+}
+body {
+ background-color: #f1f1f1;
+ padding: 20px;
+ font-family: Arial;
+}
+.main {
+ max-width: 1000px;
+ margin: auto;
+}
+h1 {
+ font-size: 50px;
+ word-break: break-all;
+}
+.row {
+ margin: 8px -16px;
+}
+.row,
+.row > .column {
+ padding: 8px;
+}
+.column {
+ float: left;
+ width: 25%;
+}
+.row:after {
+ content: "";
+ display: table;
+ clear: both;
+}
+.content {
+ background-color: white;
+ padding: 10px;
+}
+.content:hover {
+transform: scale(1.5);
+}
+@media screen and (max-width: 900px) {
+ .column {
+   width: 50%;
+ }
+}
+@media screen and (max-width: 600px) {
+ .column {
+   width: 100%;
+ }
+}
+
+    </style>
+</head>
+<body>
+<div class="top-menu"></div>
+<div class="row">
+    <div class="column">
+        <div class="content">
+            <img src="https://images-na.ssl-images-amazon.com/images/I/91AYAjK5sCL._SX466_.jpg"
+                 alt="Bottles Knives " style="width:100%">
+            <h3>Bottles Knives by Juan Gris </h3>
+            <p>119,000 $</p>
+        </div>
+    </div>
+    <div class="column">
+        <div class="content">
+            <img src="https://cdn11.bigcommerce.com/s-tatmkg2xqt/images/stencil/1280x1280/products/133/493/SET_6267__75871.1517268128.jpg?c=2&imbypass=on"
+                 alt="Four Red-sided Pears" style="width:100%">
+            <h3>Four Red-sided Pears by Oksana Ossipov</h3>
+            <p>309,000 $</p>
+        </div>
+    </div>
+    <div class="column">
+        <div class="content">
+            <img src="https://i.pinimg.com/originals/1c/f0/cb/1cf0cb609741afb40433d79a490c532b.jpg"
+                 alt="Silver Cup with Cherries" style="width:100%">
+            <h3>Silver Cup with Cherries by J Palmer </h3>
+            <p>234 000 000 $</p>
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div class="column">
+        <div class="content">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9d/Vincent_van_Gogh_-_Sunflowers_-_VGM_F458.jpg/457px-Vincent_van_Gogh_-_Sunflowers_-_VGM_F458.jpg"
+                 alt="Sunflowers" style="width:100%">
+            <h3>Sunflowers by Vincent van Gogh</h3>
+            <p>102 555 000 $</p>
+        </div>
+    </div>
+    <div class="column">
+        <div class="content">
+            <img src="https://upload.wikimedia.org/wikipedia/ru/thumb/8/83/Living_Still_Life_%281956%29.jpg/300px-Living_Still_Life_%281956%29.jpg"
+                 alt="Living still life"
+                 style="width:100%">
+            <h3>Living still life by Salvador Dali</h3>
+            <p>1 730 000 $</p>
+        </div>
+    </div>
+    <div class="column">
+        <div class="content">
+            <img src="https://uploads8.wikiart.org/images/claude-monet/still-life-with-apples-and-grapes.jpg"
+                 alt="Apples and grapes"
+                 style="width: 100%">
+            <h3>Apples and grapes by Claude Monet</h3>
+            <p> 3 450 000 $</p>
+        </div>
+    </div>
+</div>
+</body>
+</html>
+
+<script language="JavaScript">
+    $(".top-menu").load("topmenu.html");
+
+</script>
