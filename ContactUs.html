@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <meta charset="UTF-8"/>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script language="JavaScript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <style>
+        header {text-align: center; font-size: 50px; margin-top: 50px; margin-bottom: 50px}
+        body {text-align: center; font-size: 20px}
+        p {margin-bottom: 25px}
+        .center {margin: auto; width: 75%; padding: 10px;}
+        input {margin-right: 25px; font-size: 20px; font-family: "Times New Roman"; padding: 7px}
+        select {font-family: "Times New Roman"; font-size: 20px; margin-top: 15px; padding: 7px}
+        textarea {font-family: "Times New Roman"; font-size: 20px; margin-top: 15px; padding: 7px}
+    </style>
+    <title>Contact Us</title>
+</head>
+<body>
+<section>
+    <div class="top-menu"></div>
+</section>
+
+<header>
+    CONTACT US
+</header>
+
+<form>
+    <div class="center">
+        <fieldset style="background-color: #ecf9ec">
+            <legend>Personal information</legend>
+            <p>
+                First name<i style="color:red">*</i>:
+                <input name="firstName" type="text" required/>
+                Last name<i style="color:red">*</i>:
+                <input name="lastName" type="text" required/>
+            </p>
+            <p>
+                Gender:
+                <input name="gender" style="margin-left: 25px; margin-right: auto" type="radio" value="male"/> Male
+                <input name="gender" style="margin-left: 25px; margin-right: auto" type="radio" value="female"/> Female
+            </p>
+            <p>
+                Phone number<i style="color:red">*</i>:
+                <input maxlength="10" type="text" required/>
+            </p>
+            <p>
+                E-mail address<i style="color:red">*</i>:
+                <input type="text" required/>
+            </p>
+        </fieldset>
+        <p style="margin-top: 50px">
+            How did you hear about us?<br/>
+            <select style="background-color: #ecf9ec">
+                <option value="1">New from before</option>
+                <option value="2">Social media</option>
+                <option value="3">Advertisement</option>
+                <option value="4">Word of mouse</option>
+            </select>
+        </p>
+        <fieldset style="background-color: #ecf9ec">
+            <legend>Message</legend>
+            <p style="text-align: left">
+                Subject<i style="color:red">*</i>:
+                <input type="text" maxlength="50" style="width: 500px" required>
+            </p>
+            <p style="text-align: left">
+                Your message<i style="color:red">*</i>:<br/>
+                <textarea style="margin-top: 15px" rows="7" cols="100" required>
+                </textarea>
+            </p>
+        </fieldset>
+        <p>
+            <input type="submit" style="background-color: #ecf9ec">
+        </p>
+    </div>
+
+</form>
+</body>
+</html>
+
+<script language="JavaScript">
+    $(".top-menu").load("topmenu.html");
+</script>
